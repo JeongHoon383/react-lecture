@@ -1,0 +1,13 @@
+.Bbox{
+  width: 500px;
+  border: 1px solid black;
+}
+
+.item-img{
+  width: 400px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+}
