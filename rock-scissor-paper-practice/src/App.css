@@ -1,0 +1,19 @@
+.box{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.box img{
+  width: 300px;
+  height: 300px;
+}
+
+.box-container{
+  display: flex;
+  justify-content: center;
+}
+
+.button-container{
+  text-align: center;
+}

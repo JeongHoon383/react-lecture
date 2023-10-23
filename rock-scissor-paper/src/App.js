@@ -8,19 +8,23 @@ import Box from "./component/Bbox.js";
 // 6. 승패결과에 따라 테두리 색이 바뀐다. (이기면 - 초록, 지면 - 빨강, 비기면 - 검정)
 const choice = {
   rock : {
-    name : rock,
-    img : "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F2a%2F57%2F05%2F2a570536cac13b41863a0b2402c27c29.jpg&type=a340"
+    name : "rock",
+    img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Vzl--AIj0yI2IJgJfVPgP7tWnjxLMpvqVg&usqp=CAU"
   },
   scissor : {
-    name : Scissor,
+    name : "Scissor",
     img : "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fc1.neweggimages.com%2FProductImage%2FA4SR_1_20190112675283046.jpg&type=a340"
   },
   paper : {
-    name : Paper,
-    img : "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi2.ruliweb.com%2Fimg%2F22%2F12%2F20%2F1852f0d7e5dc62f5.png&type=a340"
+    name : "Paper",
+    img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7txaWoyHUC-LtcjGvvGxJzrWRLDlgYYkkzWuvvO707wrFfH1LmWN87wkmOeoKBYjr6fo&usqp=CAU"
   }
 }
 function App() {
+
+  const play = (userChoice) => {
+    console.log('선택됨!!', userChoice);
+  }
   return (
     <div>
       <div className="main">
@@ -28,9 +32,9 @@ function App() {
         <Box title="computer" />
       </div>
       <div className="main">
-        <button>가위</button>
-        <button>바위</button>
-        <button>보</button>
+        <button onClick={() => play('scissor')}>가위</button>
+        <button onClick={() => play('rock')}>바위</button>
+        <button onClick={() => play('paper')}>보</button>
       </div>
     </div>
   );
