@@ -1,0 +1,14 @@
+.box{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.box-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container{
+  text-align: center;
+}
