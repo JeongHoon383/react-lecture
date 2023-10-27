@@ -25,6 +25,10 @@ function App() {
   const [userSelect, setUserSelect] = useState(null)
   // 초기값이 저장되어있는 state, state값을 변경해주는 함수
 
+  const play = (userChoice) => {
+    setUserSelect = (choice[userChoice])
+  }
+
   return (
     <div>
       <div className="box-container">
@@ -40,9 +44,7 @@ function App() {
   );
 }
 
-const play = (userChoice) => {
-  console.log(userChoice);
-}
+
 
 
 
